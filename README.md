@@ -42,6 +42,6 @@ To access admin panel:
 ```python manage.py createsuperuser```
 
 - through web browser:
-```http://127.0.0.1/admin```
+```http://127.0.0.1:8001/admin```
 
 - Complete the login
