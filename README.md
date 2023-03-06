@@ -34,3 +34,14 @@ Test #2:
 - Test the endpoint via web browser
 ```http://127.0.0.1:8001/get_score/?user_id=33```
 
+
+# Admin panel
+
+To access admin panel:
+- create Django superuser and enter ID and password
+```python manage.py createsuperuser```
+
+- through web browser:
+```http://127.0.0.1/admin```
+
+- Complete the login
