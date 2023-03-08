@@ -16,6 +16,11 @@ class ScoreView(APIView):
             score = Score(user_id=user_id, score=result)
             score.save()
 
+            # Check if the new_column exists in the database
+            if hasattr(Score, 'new_column'):
+                score.new_column = "test column"
+                score.save()
+
             # Serialize and return score data
             serializer = ScoreSerializer(score)
             return Response(serializer.data)
